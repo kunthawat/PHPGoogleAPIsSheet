@@ -34,13 +34,13 @@
     $client->setApplicationName('Google Sheets API PHP Quickstart');
     $client->setScopes(\Google_Service_Sheets::SPREADSHEETS);
 //Change google service JSON destination
-    $client->setAuthConfig(__DIR__.'/amiable-octane-272311-e2e44b0f4852.json');
+    $client->setAuthConfig(__DIR__.'/aspring-archive-267507-c8f22adc585a.json');
     $client->setAccessType('offline');
     // $client->setPrompt('select_account consent');
 
     $service = new \Google_Service_Sheets($client);
-
-    $spreadsheetId = "GOOGLE-SHEETS-ID";
+//Change Google Sheet ID
+    $spreadsheetId = "1cRrj-Egc57u4O4XULA0oEcSg9PFOgpSzvv4tuul8Nd4";
 
     // updateData($spreadsheetId,$service);
     insertData($spreadsheetId,$service,$displayName);
